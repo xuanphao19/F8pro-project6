@@ -1,0 +1,11 @@
+
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" onclick="changePath()">
+  <path id="myPath" d="M1 16H24" stroke="black" stroke-width="2"/>
+  <script type="application/ecmascript">
+    <![CDATA[
+      function changePath() {
+        document.getElementById('myPath').setAttribute('d', 'M10 10 L90 90');
+      }
+    ]]>
+  </script>
+</svg>

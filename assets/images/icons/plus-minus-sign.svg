@@ -1,0 +1,11 @@
+<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round">
+  <g class="minus" opacity="0" stroke="#5D3BEE">
+    <circle opacity="0.2" cx="16.5" cy="16.5" r="15.5" />
+    <path d="M21.1753 16.5278H11.8799" />
+  </g>
+  <g class="increase" opacity="1" stroke="#46484f">
+    <circle opacity="0.2" cx="16.5" cy="16.5" r="15.5" />
+    <path d="M21.1753 16.5278H11.8799" />
+    <path d="M16.5276 21.1753V11.8799" />
+  </g>
+</svg>
