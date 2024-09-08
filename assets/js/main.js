@@ -294,3 +294,42 @@
     });
   });
 })();
+
+// const videoElement = document.querySelector("video");
+
+// // Kiểm tra khi video chuyển sang hoặc thoát khỏi chế độ toàn màn hình
+// document.addEventListener("fullscreenchange", () => {
+//   if (document.fullscreenElement) {
+//     console.log("Video đã vào chế độ toàn màn hình.");
+//   } else {
+//     console.log("Video đã thoát khỏi chế độ toàn màn hình.");
+//   }
+// });
+
+// // Hàm để chuyển video vào chế độ toàn màn hình
+// function toggleFullscreen() {
+//   if (!document.fullscreenElement) {
+//     videoElement.requestFullscreen().catch((err) => {
+//       console.error(`Lỗi khi vào chế độ toàn màn hình: ${err.message}`);
+//     });
+//   } else {
+//     document.exitFullscreen();
+//   }
+// }
+
+// // Thêm sự kiện nhấn nút để bật chế độ toàn màn hình
+// const fullscreenButton = document.querySelector("#fullscreenButton");
+// fullscreenButton.addEventListener("click", toggleFullscreen);
+
+// const handleFullscreen = (selector) => {
+// const node = document.getElementById(selector);
+//   if (node.requestFullscreen) {
+//     node.requestFullscreen();
+//   } else if (node.mozRequestFullScreen) {
+//     node.mozRequestFullScreen();
+//   } else if (node.webkitRequestFullscreen) {
+//     node.webkitRequestFullscreen();
+//   } else if (node.msRequestFullscreen) {
+//     node.msRequestFullscreen();
+//   }
+// };
