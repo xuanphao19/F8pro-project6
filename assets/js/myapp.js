@@ -73,7 +73,7 @@ questions.forEach((question) => {
   question.onclick = (event) => {
     event.stopPropagation();
     const itemTarget = event.target.closest(".item");
-    const isTarget = event.target.closest(".question .icon");
+    const isTarget = event.target.closest(".question");
     const items = Array.from(question.querySelectorAll(".active"));
 
     if (isTarget && itemTarget) {

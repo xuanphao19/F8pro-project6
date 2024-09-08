@@ -521,7 +521,7 @@ a,
 .meet-clients {
   display: flex;
   align-items: center;
-  gap: 62px;
+  justify-content: space-between;
 }
 
 .meet-clients .sub-title {
@@ -530,6 +530,7 @@ a,
   font-size: 4.2rem;
   padding-left: 98px;
   flex-shrink: 0;
+  margin-bottom: 24px;
 }
 
 .meet-clients .sub-title::before {
@@ -544,10 +545,20 @@ a,
 }
 
 .meet-clients .brand-group {
+  width: 100%;
+  justify-content: space-between;
+  max-width: 712px;
+}
+.brands,
+.meet-clients .brand-group {
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
   flex-wrap: wrap;
+}
+.brands {
+  width: calc(min(350px, 100% - 3rem));
+  justify-content: space-between;
 }
 
 .meet-clients .brand-item {
@@ -609,9 +620,19 @@ a,
 }
 
 .specialities .card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 74px;
   height: 74px;
-  flex-shrink: 0;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: var(--bs-box-shadow-03);
+  transition: box-shadow 0.3s linear;
+}
+
+.specialities .card-icon:hover {
+  box-shadow: var(--bs-box-shadow-hover);
 }
 
 .specialities .sub-title {
@@ -987,7 +1008,7 @@ a,
 }
 
 .accordion .item.active .question {
-  background-color: #fcfcfc;
+  background-color: #f7fffa;
   margin-bottom: 0px;
 }
 .accordion .question:hover .text {
@@ -1021,7 +1042,7 @@ a,
 }
 
 .accordion .item.active > .answer {
-  height: 86px;
+  height: 186px;
   padding-block: 12px;
 }
 
